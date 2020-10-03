@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(53, 53, 53);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.titulo-principal {
+    color: #c07378;
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    padding: 10px 0 15px 0;
+}
+
+.container-site {
+    display: flex;
+    position: relative;
+}
+
+.secao-conteudo {
+    height: 100vh;
+    background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, .85), rgba(255, 255, 255, 1)),
+    url('/img/mulheres.jpg');
+    background-size: cover;
+}
+
+.secao-menu {
+    background-image: url('/img/barra-menu-vertical.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 240px;
+    height: 100vh;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-menu,
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu,
+.menu-principal a:link,
+.menu-principal a:visited {
+    color: white;
+}
+
+.nav-menu:hover,
+.menu-principal a:hover {
+    color:#f1b8c6;
+    font-weight: 900;
+    margin-left: 4px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.menu-principal-logo-mobile {
+    display: none;
+}
+
+.menu-principal-logo {
+    padding-top: 10px;
+    margin-left: 20px;
+    width: 180px;
+}
+
+.menu-principal-logo-img {
+    width: 100%;
+}
+
+.menu-principal-secoes {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+}
+
+.menu-principal-secoes li{
+    margin-left: 10px;
+    padding: 0px 0 40px 0;
+}
+
+.menu-midias {
+    margin-left: 20px;
+
+}
+
+.fa-facebook,
+.fa-instagram,
+.fa-youtube {
+    color: #663845;
+    padding: 0 20px 0 0;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+    color: #f1b8c6;
+    text-shadow: 0 0 8px #f1b8c6;
+    transition: all 0.4s ease;
+}
+
+.secao-conteudo-textos {
+    margin-top: 40px;
+    margin-left: 260px;
+}
+
+
+.creditos {
+    color: #663845;
+    padding-top: 10px;
+    padding-right: 20px;
+    text-align: end;
+}
+
+.creditos a:hover,
+.creditos a:visited{
+    color: #663845;
+    text-decoration: none;
+}
+
+@media (max-width: 770px) {
+    .secao-menu {
+        background-image: url('/img/barra-menu-horizontal.svg');
+        width: 100vw;
+        position: absolute;
+    }
+
+    .menu-principal-logo {
+        display: none;
+    }
+
+    .menu-principal-logo-mobile {
+        display: block;
+        width: 60px;
+        margin-top: 15px;
+    }
+
+    .menu-principal-logo-mobile-img {
+        width: 100%;
+    }
+
+    .menu-principal {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-principal-secoes li {
+        margin-left: 10px;
+        padding: 0px 0 0 0;
+    }
+
+    .menu-principal-secoes {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .menu-midias {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+    }
+
+    .secao-conteudo-textos {
+        max-width: 80%;
+        margin: 0 auto;
+        padding-top: 150px;
+    }
+
+}
