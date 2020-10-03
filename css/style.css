@@ -34,12 +34,12 @@ li {
     height: 100vh;
     background-image:
     linear-gradient(to bottom, rgba(255, 255, 255, .85), rgba(255, 255, 255, 1)),
-    url('/img/mulheres.jpg');
+    url('../img/mulheres.jpg');
     background-size: cover;
 }
 
 .secao-menu {
-    background-image: url('/img/barra-menu-vertical.svg');
+    background-image: url('../img/barra-menu-vertical.svg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-width: 240px;
@@ -132,6 +132,7 @@ li {
 }
 
 .creditos a:hover,
+.creditos a:link,
 .creditos a:visited{
     color: #663845;
     text-decoration: none;
@@ -139,7 +140,7 @@ li {
 
 @media (max-width: 770px) {
     .secao-menu {
-        background-image: url('/img/barra-menu-horizontal.svg');
+        background-image: url('../img/barra-menu-horizontal.svg');
         width: 100vw;
         position: absolute;
     }
