@@ -98,6 +98,7 @@ li {
   margin-left: 20px;
 }
 
+.fa-envelope,
 .fa-facebook,
 .fa-instagram,
 .fa-youtube {
@@ -123,6 +124,12 @@ li {
   font-family: "Nunito", sans-serif;
   font-size: 50px;
   padding: 10px 0 15px 0;
+}
+
+.secao-conteudo-textos p {
+  font-size: 20px;
+  line-height: 1.5em;
+  text-align: left;
 }
 
 .creditos {
