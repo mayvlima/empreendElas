@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>EmpreendElas</title>
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Fontes -->
     <link
@@ -16,80 +18,103 @@
       rel="stylesheet"
     />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css" />
-
     <!-- FAVICON-->
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="./img/9030logo-mobile.ico"
-    />
+      href="./img/9030logo-mobile.ico" />
 
-    <!-- Biblioteca de ícones-->
+    <!--Biblioteca de ícones-->
     <script
       src="https://kit.fontawesome.com/797cbd5857.js"
       crossorigin="anonymous"
     ></script>
   </head>
+  
   <body>
-    <section class="container-site">
-      <div class="secao-menu">
-        <nav class="menu-principal">
-          <div class="menu-principal-logo">
-            <img
-              class="menu-principal-logo-img"
-              src="./img/logo-empreendelas-branca.png"
-              alt="Logo EmpreendElas"
-            />
+      <!--Menu principal-->
+      <div class="container-site">
+          <div class="secao-menu">
+              <nav>
+                  <div class="logo">
+                    <li>
+                        <a class="nav-logo" href="#">
+                        <img class="logo-btn" src="img/logo-branco.png" alt=""/>
+                        </a>                    
+                    </li>
+                  </div>
+                  <ul class="menu-principal-secoes">
+                    <li>
+                        <a href="#"><i class="Home">Home</i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="Sobre">Sobre</i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="Empreendedoras">Empreendedoras</i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="Podcast">Podcast</i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="Apoie">Apoie</i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="Dicas">Dicas</i></a>
+                    </li>
+                  </ul>
+              </nav>
           </div>
+      </div>
 
-          <div class="menu-principal-logo-mobile">
-            <img
-              class="menu-principal-logo-mobile-img"
-              src="./img/logo-mobile.png"
-              alt="Logo EmpreendElas"
-            />
+      <!--Texto-->
+      <div class="secao-conteudo">
+          <div class="secao-conteudo-textos">
+              <header>
+                  <div class="titulo-principal">
+                      <h1>EmpreendElas</h1>
+                      <p>
+                        O EmpreendElas surgiu da necessidade de darmos mais voz às </p> 
+                      <p>mulheres empreendedoras e àquelas que desejam empreender </p>
+                      <p>mas ainda não sabem por onde começar.</p>
+                      <p> Queremos que cada vez mais as mulheres sejam </p>
+                      <p>independentes e realizadas. </p>
+                      <p>Vamos junt@s!</p>
+
+                      <a href="#">
+                          Apoie!
+                      </a>
+
+              </header>
+
           </div>
-
-          <ul class="menu-principal-secoes">
-            <a href="#"><li>Home</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Empreendedoras</li></a>
-            <a href="#"><li>Podcast</li></a>
-            <a href="#"><li>Patrocine</li></a>
-            <a href="#"><li>Artigos</li></a>
-          </ul>
-        </nav>
-
+      </div>
+      
+      <footer>
         <div class="menu-midias">
           <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
           <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
           <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
           <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
         </div>
-      </div>
-
-      <div class="secao-conteudo">
-        <div class="secao-conteudo-textos">
-          <h1 class="titulo-principal">EmpreendElas</h1>
-
-          <!--Sugestão mas podem mudar-->
-          <p>
-            O EmpreendElas surgiu da necessidade de darmos mais voz às mulheres
-            e àquelas que querem empreender e não sabem por onde começar.
-            Queremos que cada vez mais as mulheres sejam independentes e
-            realizadas. Vamos juntas!
-          </p>
+        
+        <div class="creditos">
+          <a href="#"><p>© Créditos</p></a>
         </div>
+      </footer>
 
-        <footer>
-          <div class="creditos">
-            <a href="#"><p>© Créditos</p></a>
-          </div>
-        </footer>
-      </div>
-    </section>
+    </body>
+
+
+  <!-- 
+          <div class="menu-principal-logo-mobile">
+            <img
+              class="menu-principal-logo-mobile-img"
+              src="./img/logo-mobile.png"
+              alt="Logo EmpreendElas"
+            />
+          </div> -->
+
 
     <script src="js/script.js"></script>
   </body>
