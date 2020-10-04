@@ -8,60 +8,79 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: rgb(53, 53, 53);
+  background-image: url("../img/big_women.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-size: 56%;
+  background-color: #F2F2F2;
 }
 
-a {
-  text-decoration: none;
-}
 
-li {
-  list-style: none;
-}
-
-.container-site {
+/*Header*/
+.container-site{
+  background: url("../img/barra-menu-horizontal.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -120px;
+  height: 290px;
   display: flex;
   position: relative;
 }
 
-.secao-conteudo {
-  height: 100vh;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0.85),
-      rgba(255, 255, 255, 1)
-    ),
-    url("../img/mulheres.jpg");
-  background-size: cover;
+.secao-menu{
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
-.secao-menu {
-  background-image: url("../img/barra-menu-vertical.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  min-width: 240px;
-  height: 100vh;
-  color: white;
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  position: fixed;
-  z-index: 1;
+/*Logo EmpreendElas*/
+.logo-btn {
+  padding-left: 0;
+  margin-top: 250px;
+  width: 70%;
 }
 
-.nav-menu,
-.menu-principal a {
+/*Posição do Menu*/
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
   color: white;
+}
+
+nav ul{
+  margin-top: 210px;
+  display: flex;
+}
+
+/*Itens_Menu*/
+
+.menu-principal-secoes {
+  list-style: none;
+  margin-right: 40px;
+}
+
+.menu-principal-secoes li a {
   text-decoration: none;
+  font-family: "Nunito", sans-serif;
+  color: white;
+  padding-left: 40px;
+  font-size: 20px;
 }
 
-.nav-menu,
+/*Efeito_Menu*/
+.menu-principal-secoes,
 .menu-principal a:link,
 .menu-principal a:visited {
   color: white;
 }
 
-.nav-menu:hover,
-.menu-principal a:hover {
+.Home:hover,
+.Sobre:hover,
+.Empreendedoras:hover,
+.Podcast:hover,
+.Apoie:hover,
+.Dicas:hover {
   color: #f1b8c6;
   font-weight: 900;
   margin-left: 4px;
@@ -69,40 +88,73 @@ li {
   text-decoration: none;
 }
 
-.menu-principal-logo-mobile {
-  display: none;
+/*Texto*/
+.secao-conteudo {
+  height: 15vh;
+  background-size: cover;
 }
 
-.menu-principal-logo {
-  padding-top: 10px;
-  margin-left: 20px;
-  width: 180px;
+.secao-conteudo-textos {
+  margin-top: 35px;
+  margin-left: 60px;
 }
 
-.menu-principal-logo-img {
-  width: 100%;
+.titulo-principal {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 90px;
+  color:#8B4E5E;
+  text-shadow: 0.1em 0.1em 0.2em #925978;
+  }
+
+.secao-conteudo-textos p {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 25px;
+  color:#5B5B5B;
+  text-shadow: none;
 }
 
-.menu-principal-secoes {
-  display: flex;
-  flex-direction: column;
-  padding-top: 30px;
+.secao-conteudo-textos a {
+  color: #FFFFFF;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px 30px;
+  align-items: center;
+  text-align: center;
+  background: #E894A7;
+  border-radius: 25px;
 }
 
-.menu-principal-secoes li {
-  margin-left: 10px;
-  padding: 0px 0 40px 0;
+
+/*Footer*/
+footer {
+  background: url("../img/Retângulo_footer.svg");
+  background-repeat: no-repeat;
+  margin-top: -100px;
+  background-size: 100%;
+  height: 500px;
 }
 
+/*Footer_Midias*/
 .menu-midias {
-  margin-left: 20px;
+  color: #f1b8c6;
+  padding-top: 410px;
+  float: left;
+  margin-left: 90px;
+  font-size: 20px;
+  text-align: end;
 }
 
 .fa-envelope,
 .fa-facebook,
 .fa-instagram,
 .fa-youtube {
-  color: #663845;
+  color:  #f1b8c6;
   padding: 0 20px 0 0;
 }
 
@@ -114,27 +166,10 @@ li {
   transition: all 0.4s ease;
 }
 
-.secao-conteudo-textos {
-  margin-top: 40px;
-  margin-left: 260px;
-}
-
-.titulo-principal {
-  color: #c07378;
-  font-family: "Nunito", sans-serif;
-  font-size: 50px;
-  padding: 10px 0 15px 0;
-}
-
-.secao-conteudo-textos p {
-  font-size: 20px;
-  line-height: 1.5em;
-  text-align: left;
-}
-
+/*Footer_Creditos*/
 .creditos {
-  color: #663845;
-  padding-top: 10px;
+  color: #f1b8c6;
+  padding-top: 420px;
   padding-right: 20px;
   text-align: end;
 }
@@ -142,9 +177,11 @@ li {
 .creditos a:hover,
 .creditos a:link,
 .creditos a:visited {
-  color: #663845;
+  color:  #f1b8c6;
   text-decoration: none;
 }
+
+
 
 /*MOBILE*/
 
@@ -198,4 +235,3 @@ li {
     margin: 0 auto;
     padding-top: 150px;
   }
-}
