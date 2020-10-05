@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt">
+  
   <head>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>EmpreendElas</title>
-    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!---CSS-->
+    <link rel="stylesheet" href="css/style.css"/>
 
     <!-- Fontes -->
     <link
@@ -18,104 +26,138 @@
       rel="stylesheet"
     />
 
-    <!-- FAVICON-->
+    <!-- Favicon-->
     <link
       rel="shortcut icon"
       type="image/x-icon"
-      href="./img/9030logo-mobile.ico" />
+      href="./img/9030logo-mobile.ico"/>
 
     <!--Biblioteca de ícones-->
     <script
       src="https://kit.fontawesome.com/797cbd5857.js"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
+  
   </head>
   
   <body>
-      <!--Menu principal-->
-      <div class="container-site">
-          <div class="secao-menu">
-              <nav>
-                  <div class="logo">
-                    <li>
-                        <a class="nav-logo" href="#">
-                        <img class="logo-btn" src="img/logo-branco.png" alt=""/>
-                        </a>                    
-                    </li>
-                  </div>
-                  <ul class="menu-principal-secoes">
-                    <li>
-                        <a href="#"><i class="Home">Home</i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="Sobre">Sobre</i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="Empreendedoras">Empreendedoras</i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="Podcast">Podcast</i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="Apoie">Apoie</i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="Dicas">Dicas</i></a>
-                    </li>
-                  </ul>
-              </nav>
-          </div>
-      </div>
 
-      <!--Texto-->
-      <div class="secao-conteudo">
-          <div class="secao-conteudo-textos">
-              <header>
-                  <div class="titulo-principal">
-                      <h1>EmpreendElas</h1>
-                      <p>
-                        O EmpreendElas surgiu da necessidade de darmos mais voz às </p> 
-                      <p>mulheres empreendedoras e àquelas que desejam empreender </p>
-                      <p>mas ainda não sabem por onde começar.</p>
-                      <p> Queremos que cada vez mais as mulheres sejam </p>
-                      <p>independentes e realizadas. </p>
-                      <p>Vamos junt@s!</p>
-
-                      <a href="#">
-                          Apoie!
-                      </a>
-
-              </header>
-
-          </div>
-      </div>
-      
-      <footer>
-        <div class="menu-midias">
-          <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
-          <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
-          <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
-          <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
-        </div>
+      <section class="container-site">
+         
+        <!--Menu principal (com configurações Boostrap)-->
         
-        <div class="creditos">
-          <a href="#"><p>© Créditos</p></a>
-        </div>
-      </footer>
+        <header class="container-menu">
+          
+          <nav id="nav-nav" class="navbar navbar-expand-lg navbar-dark menu-mobile-background">
+            
+            <!-- Logo desktop -->
+            <a href="#"><img class="logo-btn" src="./img/logo-empreendelas-branca.png" alt="Logo"></a>
+            
+            <!-- Logo mobile -->
+            <a href="#"><img class="logo-btn-mobile" src="./img/logo-mobile.png" alt="Logo"></a>
 
-    </body>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+
+                <ul class="navbar-nav">
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-secoes" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-secoes" href="#">Sobre</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link menu-secoes" href="#">Empreendedoras</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link menu-secoes" href="#">Podcast</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link menu-secoes" href="#">Apoie</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link menu-secoes" href="#">Dicas</a>
+                    </li>
+
+                </ul>
+            
+            </div>
+          
+          </nav>
+
+        </header>
+      
+        <!-- Conteúdo da Home -->
+
+        <section class="container-conteudo">
+   
+          <div class="secao-conteudo">
+
+                <div class="secao-conteudo-textos">
+                    <h1 class="titulo-principal">Quem somos?</h1>
+                      <p> O <strong>EmpreendElas</strong> surgiu da necessidade de darmos mais voz às mulheres empreendedoras e àquelas que desejam empreender mas ainda não sabem por onde começar. Queremos que cada vez mais as mulheres sejam independentes e realizadas.</p>
+                      <p>Vamos junt@s!</p>
+                </div>
+
+                <div class="secao-conteudo-botao">
+                  <a href="#">
+                    Apoie!
+                  </a>
+                </div>
+
+          </div>
+
+        </section>
+
+      </section>
+
+        <!-- Footer -->
+        
+        <footer class="container-footer">
+
+          <div class="footer-midias">
+
+            <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-lg"></i></a>
+            <a href="#"><i class="fa fa-envelope fa-lg"></i></a>
+
+          </div>
+          
+          <div class="creditos">
+            <a href="#"><p>© Créditos</p></a>
+          </div>
+
+        </footer>
+
+      
 
 
-  <!-- 
-          <div class="menu-principal-logo-mobile">
-            <img
-              class="menu-principal-logo-mobile-img"
-              src="./img/logo-mobile.png"
-              alt="Logo EmpreendElas"
-            />
-          </div> -->
+    <!-- Scripts JS Bootstrap-->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 
+    <!-- Script JS -->
     <script src="js/script.js"></script>
+
   </body>
 </html>

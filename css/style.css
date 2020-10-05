@@ -11,141 +11,128 @@ body {
   background-image: url("../img/big_women.svg");
   background-repeat: no-repeat;
   background-position-x: right;
-  background-size: 56%;
+  background-size: 120vh;
   background-color: #F2F2F2;
 }
 
 
-/*Header*/
-.container-site{
+/* ---------------------- INÍCIO HEADER (Menu) ---------------------- */
+
+/*Container menu*/
+.container-menu {
   background: url("../img/barra-menu-horizontal.svg");
   background-repeat: no-repeat;
   background-size: 100%;
-  margin-top: -120px;
-  height: 290px;
-  display: flex;
-  position: relative;
-}
-
-.secao-menu{
-  max-width: 1300px;
-  margin: 0 auto;
+  height: 190px;
 }
 
 /*Logo EmpreendElas*/
 .logo-btn {
-  padding-left: 0;
-  margin-top: 250px;
-  width: 70%;
+  margin-left: 100px;
+  padding-top: 50px;
+  width: 480px;
+  opacity: .8;
 }
 
-/*Posição do Menu*/
-nav{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 120px;
-  color: white;
-}
-
-nav ul{
-  margin-top: 210px;
-  display: flex;
+.logo-btn-mobile {
+  display: none;
 }
 
 /*Itens_Menu*/
 
-.menu-principal-secoes {
-  list-style: none;
-  margin-right: 40px;
-}
-
-.menu-principal-secoes li a {
-  text-decoration: none;
+.menu-secoes {
   font-family: "Nunito", sans-serif;
   color: white;
-  padding-left: 40px;
   font-size: 20px;
+  text-align: right;
+}
+
+.menu-secoes a:visited {
+  color: white;
 }
 
 /*Efeito_Menu*/
-.menu-principal-secoes,
-.menu-principal a:link,
-.menu-principal a:visited {
-  color: white;
+.menu-secoes:hover {
+  padding-top: 5px;
+  transition: all 0.3s ease;
 }
 
-.Home:hover,
-.Sobre:hover,
-.Empreendedoras:hover,
-.Podcast:hover,
-.Apoie:hover,
-.Dicas:hover {
-  color: #f1b8c6;
-  font-weight: 900;
-  margin-left: 4px;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
+/* ---------------------- FIM HEADER (Menu) ---------------------- */
+
+
+/* ---------------------- INÍCIO CONTEÚDO HOME ---------------------- */
+
 
 /*Texto*/
-.secao-conteudo {
-  height: 15vh;
-  background-size: cover;
-}
 
-.secao-conteudo-textos {
-  margin-top: 35px;
+.secao-conteudo {
+  margin-top: 20px;
   margin-left: 60px;
+  max-width: 30%;
 }
 
 .titulo-principal {
   font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 25px;
+  font-weight: 700;
+  font-size: 32px;
   line-height: 90px;
-  color:#8B4E5E;
-  text-shadow: 0.1em 0.1em 0.2em #925978;
+  color:#c06378;
+  text-shadow: 1.1em.3em 0.1em #92597823;
   }
 
-.secao-conteudo-textos p {
+.secao-conteudo-textos {
   font-family: "Nunito", sans-serif;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 25px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
   color:#5B5B5B;
   text-shadow: none;
 }
 
-.secao-conteudo-textos a {
+.secao-conteudo-botao {
+  padding-top: 20px;
+}
+
+.secao-conteudo-botao a {
   color: #FFFFFF;
   font-family: "Nunito", sans-serif;
   text-decoration: none;
-  font-size: 25px;
-  padding: 10px 30px;
+  font-size: 18px;
+  padding: 6px 20px;
   align-items: center;
   text-align: center;
   background: #E894A7;
   border-radius: 25px;
 }
 
+.secao-conteudo-botao a:hover {
+  background-color: darkgray;
+  padding: 6px 20px 6px 70px;
+  transition: all 0.4s ease;
+
+}
+
+/* ---------------------- INÍCIO CONTEÚDO HOME ---------------------- */
+
+
+/* ---------------------- INÍCIO FOOTER ---------------------- */
+
 
 /*Footer*/
-footer {
+.container-footer {
   background: url("../img/Retângulo_footer.svg");
   background-repeat: no-repeat;
-  margin-top: -100px;
   background-size: 100%;
-  height: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*Footer_Midias*/
-.menu-midias {
+.footer-midias {
   color: #f1b8c6;
-  padding-top: 410px;
   float: left;
-  margin-left: 90px;
+  padding-top: 130px;
+  margin-left: 100px;
   font-size: 20px;
   text-align: end;
 }
@@ -160,78 +147,208 @@ footer {
 
 .fa-facebook:hover,
 .fa-instagram:hover,
-.fa-youtube:hover {
+.fa-youtube:hover,
+.fa-envelope:hover {
   color: #f1b8c6;
   text-shadow: 0 0 8px #f1b8c6;
   transition: all 0.4s ease;
 }
 
-/*Footer_Creditos*/
+/*Footer Créditos*/
 .creditos {
   color: #f1b8c6;
-  padding-top: 420px;
+  padding-top: 130px;
   padding-right: 20px;
   text-align: end;
+  padding-bottom: 20px;
 }
 
-.creditos a:hover,
 .creditos a:link,
 .creditos a:visited {
   color:  #f1b8c6;
   text-decoration: none;
 }
 
+.creditos a:hover {
+  color:  #f0d7dd;
+  
+}
+
+/*Código para fixar footer no fim da página*/
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-site {
+  flex: 1;
+}
+
+/*Fim do código para fixar footer no fim da página*/
+
+/* ---------------------- FIM FOOTER ---------------------- */
 
 
-/*MOBILE*/
+/* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
 
-@media (max-width: 480px) {
+
+/* Notebook */
+@media (max-width: 1360px) {
+
+  body {
+    background-image: url('../img/big_women_mobile.svg');
+    background-position-x: right;
+    background-size: 90vh;
+  }
+
+  .logo-btn {
+    margin-left: 150px;
+    width: 400px;
+  }
+
+  .menu-secoes {
+    font-size: 18px;
+  }
+
+  .secao-conteudo {
+    max-width: 50%;
+  }
+
+}
+
+@media (max-width: 1150px) {
+
+  .logo-btn {
+    margin-left: 100px;
+    width: 380px;
+  }
+
+}
+
+@media (max-width: 1050px) {
+
+  .logo-btn {
+    margin-left: 100px;
+    width: 340px;
+  }
+
+}
+
+/* Netbook */
+
+@media (max-width: 991px) {
+
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 135%;
+    height: 300px;
+  }
+
+  .logo-btn {
+    margin-left: 200px;
+    padding-top: 50px;
+    width: 300px;
+  }
+
+  .menu-mobile-background {
+    background-color: #c06378;
+  }
+
+  .navbar-toggler {
+    font-size: 1.5rem;
+    background-color: #8b4e5e;
+    margin-right: 40px;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.8rem;
+    padding-left: .8rem;
+  }
+
+  .secao-conteudo {
+    margin-top: -100px; 
+    max-width: 30%;
+  }
+
+}
+
+
+/* Tablet */
+
+
+@media (max-width: 850px) {
+
+  .container-menu {
+    background-size: 150%;
+    background-position-x: right;
+  }
+
+  .secao-conteudo {
+    margin-top: -160px;
+    max-width: 56%;
+  }
+
 }
 
 @media (max-width: 770px) {
-  .secao-menu {
-    background-image: url("../img/barra-menu-horizontal.svg");
-    width: 100vw;
-    position: absolute;
+
+  .container-menu {
+    background-size: 170%;
+    background-position-x: right;
   }
 
-  .menu-principal-logo {
+  .logo-btn {
     display: none;
   }
 
-  .menu-principal-logo-mobile {
+  .logo-btn-mobile {
     display: block;
-    width: 60px;
-    margin-top: 15px;
+    width: 100px;
+    margin-left: -134px;
   }
 
-  .menu-principal-logo-mobile-img {
-    width: 100%;
+}
+
+/* Mobile  */
+
+@media (max-width: 680px) {
+
+  body {
+    background-image: url('../img/big_women_mobile-v2.svg');
+    background-size: 80vh;
+    background-position-x: center;
   }
 
-  .menu-principal {
-    display: flex;
-    justify-content: center;
+  .container-menu {
+    background-size: 205%;
+    background-position-x: center;
   }
 
-  .menu-principal-secoes li {
-    margin-left: 10px;
-    padding: 0px 0 0 0;
+  .container-conteudo {
+    height: 80vh;
   }
 
-  .menu-principal-secoes {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .menu-midias {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-  }
-
-  .secao-conteudo-textos {
+  .secao-conteudo {
     max-width: 80%;
-    margin: 0 auto;
-    padding-top: 150px;
   }
+
+  .container-footer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-midias {
+    padding-top: 100px;
+    margin-left: 0;
+  }
+
+  .creditos {
+    padding-right: 0;
+    padding-top: 40px;
+  }
+}
