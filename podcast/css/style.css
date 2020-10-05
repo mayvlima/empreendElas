@@ -1,0 +1,568 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: rgb(53, 53, 53);
+}
+
+
+
+/* ---------------------- INÍCIO HEADER (Menu) ---------------------- */
+
+/*Container menu*/
+.container-menu {
+  background: url("../img/barra-menu-horizontal.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 190px;
+  background-color: rgba(192, 99, 120, 0.1);
+}
+
+/*Logo EmpreendElas*/
+.logo-btn {
+  margin-left: 100px;
+  padding-top: 50px;
+  width: 480px;
+  opacity: .8;
+}
+
+.logo-btn-mobile {
+  display: none;
+}
+
+/*Itens_Menu*/
+
+.menu-secoes {
+  font-family: "Nunito", sans-serif;
+  color: white;
+  font-size: 20px;
+  text-align: right;
+}
+
+.menu-secoes a:visited {
+  color: white;
+}
+
+/*Efeito_Menu*/
+.menu-secoes:hover {
+  padding-top: 5px;
+  transition: all 0.3s ease;
+}
+
+/* ---------------------- FIM HEADER (Menu) ---------------------- */
+
+
+/* ---------------------- INÍCIO CONTEÚDO HOME ---------------------- */
+
+.info-podcast{ 
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;    
+  background-color: rgba(192, 99, 120, 0.1);
+  padding: 0 80px 40px 40px;   
+}
+
+.texto-podcast{
+  display: none;
+}
+
+.descricao{    
+  display: flex;
+  flex-direction: column;   
+  padding:10px 50px 10px 50px;
+}
+
+.descricao p{
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+  font-weight: 300;    
+}
+#playlist{
+  width: 40%;
+}
+
+.chamadas{
+  width: 60%;
+}
+
+.titulo-chamada{
+  color: #663845;
+  font-size: 30px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+  text-align: center;
+}
+.titulo-principal-podcast {
+  color: #663845;
+  font-family: 'Nunito', sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 10px 0 15px 0;
+  text-transform: uppercase;
+  text-align: center;    
+}
+
+.chamada-episodios{
+  display:flex;    
+  padding: 50px 15px 10px 15px;
+  margin-bottom: 30px;
+  justify-content: center;  
+}
+
+.container-videos{
+  background-color: rgba(102, 56, 69, 0.3);
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#play{
+  padding-left: 50px;    
+}
+
+.texto-chamada{
+  font-size: 40px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;   
+}
+
+.podcast-videos{
+  display: flex;  
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;      
+}
+
+.div-podcast{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(192, 99, 120, 0.3); 
+  margin-bottom: 30px; 
+  width: 600px;
+  height: 600px;
+  border-radius: 50px;  
+}
+
+.div-podcast h1{
+  padding: 40px 15px 25px 15px;    
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.div-podcast p{
+  font-size: 16px;
+  padding: 20px 70px 20px 70px;
+  text-align: justify;
+  color: black;    
+}
+
+.div-podcast iframe{
+  width:460px;
+  height:240px;
+}
+
+.link-canal{    
+  background-color: #c06378;
+  border-radius: 10px;
+  padding: 10px 10px;   
+  text-transform: uppercase;  
+  width: 250px;
+  color: white;
+  text-decoration: none;
+  margin-top: 10px; 
+  text-align: center;   
+}
+
+.link-canal:hover{ 
+  text-decoration: none;     
+}
+
+.link-canal:visited{
+  color:white
+}
+
+/*Texto*/
+
+
+/* ---------------------- FIM CONTEÚDO PODCAST ---------------------- */
+
+
+/* ---------------------- INÍCIO FOOTER ---------------------- */
+
+
+/*Footer*/
+.container-footer {
+  background: url("../img/Retângulo_footer.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color:rgba(102, 56, 69, 0.3);
+}
+
+/*Footer_Midias*/
+.footer-midias {
+  color: #f1b8c6;
+  float: left;
+  padding-top: 130px;
+  margin-left: 100px;
+  font-size: 20px;
+  text-align: end;
+}
+
+.fa-envelope,
+.fa-facebook,
+.fa-instagram,
+.fa-youtube {
+  color:  #f1b8c6;
+  padding: 0 20px 0 0;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover,
+.fa-youtube:hover,
+.fa-envelope:hover {
+  color: #f1b8c6;
+  text-shadow: 0 0 8px #f1b8c6;
+  transition: all 0.4s ease;
+}
+
+/*Footer Créditos*/
+.creditos {
+  color: #f1b8c6;
+  padding-top: 130px;
+  padding-right: 20px;
+  text-align: end;
+  padding-bottom: 20px;
+}
+
+.creditos a:link,
+.creditos a:visited {
+  color:  #f1b8c6;
+  text-decoration: none;
+}
+
+.creditos a:hover {
+  color:  #f0d7dd;
+  
+}
+
+/*Código para fixar footer no fim da página*/
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-site {
+  flex: 1;
+}
+
+/*Fim do código para fixar footer no fim da página*/
+
+/* ---------------------- FIM FOOTER ---------------------- */
+
+
+/* ---------------------- INÍCIO CONFIGURAÇÕES RESPONSIVAS ---------------------- */
+
+
+/* Notebook */
+@media (max-width: 1360px) {
+
+  body {    
+    background-position-x: right;
+    background-size: 90vh;
+  }
+
+  .logo-btn {
+    margin-left: 150px;
+    width: 400px;
+  }
+
+  .menu-secoes {
+    font-size: 18px;
+  }
+
+  .secao-conteudo {
+    max-width: 50%;
+  }
+
+}
+
+@media (max-width: 1150px) {
+
+  .logo-btn {
+    margin-left: 100px;
+    width: 380px;
+  }
+
+}
+
+@media (max-width: 1050px) {
+
+  .logo-btn {
+    margin-left: 100px;
+    width: 340px;
+  }
+
+}
+
+/* Netbook */
+
+@media (max-width: 991px) {
+
+  .container-menu {
+    background-repeat: no-repeat;
+    background-size: 135%;
+    height: 200px;
+  }
+
+  .logo-btn {
+    margin-left: 50px;
+    padding-top: 50px;
+    width: 300px;
+  }
+
+  .menu-mobile-background {
+    background-color: #c06378;
+  }
+
+  .navbar-toggler {
+    font-size: 1.5rem;
+    background-color: #8b4e5e;
+    margin-right: 40px;
+  }
+  
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.8rem;
+    padding-left: .8rem;
+  }
+
+  .secao-conteudo {
+    margin-top: -100px; 
+    max-width: 30%;
+  }
+
+
+
+}
+
+
+/* Tablet */
+
+
+@media (max-width: 850px) {
+
+  .container-menu {
+    background-size: 150%;
+    background-position-x: right;
+    height: 200px;
+  }
+  
+
+  .secao-conteudo {
+    margin-top: -160px;
+    max-width: 56%;
+  }
+
+ 
+
+}
+
+@media (max-width: 770px) {
+
+  .container-menu {
+    background-size: 170%;
+    background-position-x: right;
+  }
+
+  .logo-btn {
+    display: none;
+  }
+
+  .logo-btn-mobile {
+    display: block;
+    width: 85px;
+    margin-left: -134px;
+    
+  }
+
+  .descricao{
+    display:none;
+  }
+
+  .texto-podcast{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 45px 20px 45px;           
+    background-color: rgba(192, 99, 120, 0.1);
+}
+
+.secao-podcast-textos p{
+    padding-bottom: 10px;
+    color: black;
+    font-size: 14px;
+    text-align: justify;    
+}
+
+
+
+}
+
+/* Mobile  */
+
+@media (max-width: 680px) {
+
+    .container-menu {
+    background-size: 205%;
+    background-position-x: center;
+  }
+
+  .container-conteudo {
+    height: 80vh;
+  }
+
+  .secao-conteudo {
+    max-width: 80%;
+  }
+
+  .div-podcast{
+    width: auto;
+    height: auto;
+    margin: 0 10px 20px 10px;    
+  }
+
+  .container-footer {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-midias {
+    padding-top: 100px;
+    margin-left: 0;
+  }
+
+  .creditos {
+    padding-right: 0;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 440px) {
+
+  .container-menu{
+    height: 150px;
+  }
+
+  .logo-btn-mobile{
+    width: 75px;
+    margin: 0;
+    margin-left: -100px;
+  }
+
+  .info-podcast{    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;    
+  }
+
+  #playlist{
+    width: 50%;
+    padding-bottom: 50px;
+}
+
+.chamadas{
+  width: 100%;
+}
+
+.titulo-chamada{
+    color: #663845;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+}
+.titulo-principal-podcast {
+    color: #663845;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    font-style: italic;
+    padding: 10px 0 15px 0;
+    text-transform: uppercase;  
+    
+}
+
+.chamada-episodios{
+  margin: 0;
+  padding-top: 25px;
+}
+
+.texto-chamada{
+  font-size: 20px;
+  margin:0;
+}
+
+.podcast-videos{
+  display: flex;
+  flex-direction: column; 
+  margin-bottom: 10px;
+  padding-top: 10px;
+        
+}
+
+.div-podcast{
+  width: auto;
+  height: auto;
+  margin: 0 10px 20px 10px;    
+}
+
+.div-podcast h1{
+  padding: 30px 15px 15px 15px;    
+  font-size: 18px;
+  text-align: center;
+}
+
+
+.div-podcast p{
+  font-size: 16px;
+  padding: 20px 15px 10px 15px;
+  text-align: justify;
+  color: black;    
+}
+
+.div-podcast iframe{
+  width:200px;
+  height:200px;
+}
+
+.link-canal{
+  margin-top: 0;
+}
+
+
+}
