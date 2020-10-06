@@ -5,16 +5,11 @@
 }
 
 body {
-  font-family: "Roboto";
-  font-size: 14px;
   background-image: none;
+
 }
 
-.container {
-  padding: 0 20px;
-}
-
-.historia {
+.container-historia {
   background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 0.7),
@@ -23,7 +18,7 @@ body {
     url(../img/mulheres.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 h2,
@@ -42,7 +37,7 @@ h2,
   font-weight: bold;
 }
 
-.historia p {
+.container-historia p {
   text-align: left;
   text-indent: 2em;
   line-height: 1.5em;
@@ -56,36 +51,33 @@ h2 {
   font-size: 35px;
 }
 
-.img-fundadoras {
-  border: 1px solid #ffffff;
-  border-radius: 4%;
-  margin: 20px;
-  background: linear-gradient(to bottom, #8b4e5e, #321e25);
-  width: 530px;
-}
-
-h6 {
-  text-align: center;
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #ffffff;
-}
-
-.img-fundadoras img {
-  width: 500px;
-  justify-content: center;
-}
-
 .evento p,
-.fundadoras p {
+.container-fundadoras p {
   font-size: 20px;
   text-align: left;
   text-indent: 2em;
   margin-bottom: 1em;
 }
 
-.img-fundadoras p {
-  text-align: justify;
+/* .fundadoras {
+  display: flex;
+  justify-content: center;
+} */
+
+.box {
+  border-radius: 4%;
+  margin: 20px;
+  background: linear-gradient(to bottom, #8b4e5e, #321e25);
+}
+
+.box h6 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.box p {
   color: #ffffff;
   font-size: 17px;
   line-height: 1.5em;
@@ -94,11 +86,11 @@ h6 {
 
 /*mobile */
 
-@media (max-width: 480px) {
-  .container {
-    padding: 0;
-  }
-  .historia {
+@media (min-width: 320px) {
+
+  /*container-história*/
+
+  .container-historia {
     background-position: 35%;
     padding: 10px;
   }
@@ -108,7 +100,7 @@ h6 {
     position: relative;
   }
 
-  .sublinhado {
+  .sublinhado-historia {
     position: absolute;
     width: 300px;
     padding: 15px 0 10px 30px;
@@ -121,36 +113,54 @@ h6 {
   }
 
   .evento p,
-  .historia p {
+  .container-historia p {
     text-indent: 1.5em;
     font-size: 22px;
     margin-bottom: 1.5em;
   }
 
-  .historia p {
-    padding: 0 10px;
+  .container-historia p {
+    padding: 20px 10px;
   }
 
-  .img-fundadoras:last-child {
-    margin-bottom: 30px;
+  /*container-fundadoras */
+
+  .sublinhado-fundadoras {
+    position: absolute;
+    width: 255px;
+    padding: 15px 0 10px 30px;
   }
 
-  .img-fundadoras {
-    margin: 0 0 10px 0;
-    width: auto;
-  }
-
-  .img-fundadoras img {
-    width: 455px;
-  }
-
-  .fundadoras p {
+  .container-fundadoras p {
     text-indent: 1.5em;
     font-size: 22px;
     padding: 40px 10px 10px;
   }
 
-  .container-fundadoras p {
+  .evento,
+  .fundadoras {
+    padding: 10px;
+  }
+
+  .box {
+    margin-bottom: 10px;
+
+  }
+
+  .box {
+    margin: 0 0 10px 0;
+    
+  }
+
+  .box img {
+    width: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .box-fundadoras p {
     font-size: 18px;
     line-height: 1.5em;
     padding: 30px 10px 10px;
@@ -158,7 +168,14 @@ h6 {
     text-align: left;
   }
 
- .evento .sublinhado {
+  .box:last-child {
+    margin-bottom: 30px;
+  }
+
+  /*container-evento*/
+
+ .sublinhado-evento {
+   position: absolute;
   width: 180px;
   padding: 20px 0 10px 30px;
  }
@@ -170,27 +187,37 @@ h6 {
   }
 
   .evento p {
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
 
   iframe {
-    border: 3px solid #ffffff;
-    width: 440px;
-    height: 245px;
+    border: 4px ridge #8b4e5e;
+    width: 100%;
+    height: 250px;
+  }
+
+  .creditos {
+    padding-right: 0;
+    padding-top: 15px;
   }
 }
 
 /* Tablet*/
 
-@media (min-width: 780px) {
-  .container-fundadoras {
-    display: flex;
+/* @media (min-width: 768px) {
+  .fundadoras {
+     display: flex; 
+     width: 530px;
   }
-}
+
+  .box {
+     justify-content: center; 
+  }
+} */
 
 /* Desktop */
 @media (min-width: 1050px) {
-  .historia {
+  .container-historia {
     padding: 3em;
   }
 }
