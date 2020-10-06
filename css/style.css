@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-
+/* 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -13,18 +13,18 @@ body {
   background-position-x: right;
   background-size: 120vh;
   background-color: #F2F2F2;
-}
+} */
 
 
 /* ---------------------- INÍCIO HEADER (Menu) ---------------------- */
 
-/*Container menu*/
-.container-menu {
+/* Container menu*/
+ .container-menu {
   background: url("../img/barra-menu-horizontal.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   height: 190px;
-}
+} 
 
 /*Logo EmpreendElas*/
 .logo-btn {
@@ -199,12 +199,12 @@ body {
 
 /* Notebook */
 @media (max-width: 1360px) {
-
+/* 
   body {
     background-image: url('../img/big_women_mobile.svg');
     background-position-x: right;
     background-size: 90vh;
-  }
+  } */
 
   .logo-btn {
     margin-left: 150px;
@@ -242,12 +242,12 @@ body {
 /* Netbook */
 
 @media (max-width: 991px) {
-
+/* 
   .container-menu {
     background-repeat: no-repeat;
     background-size: 135%;
     height: 300px;
-  }
+  } */
 
   .logo-btn {
     margin-left: 200px;
@@ -283,10 +283,10 @@ body {
 
 @media (max-width: 850px) {
 
-  .container-menu {
+  /* .container-menu {
     background-size: 150%;
     background-position-x: right;
-  }
+  } */
 
   .secao-conteudo {
     margin-top: -160px;
@@ -296,11 +296,11 @@ body {
 }
 
 @media (max-width: 770px) {
-
+/* 
   .container-menu {
     background-size: 170%;
     background-position-x: right;
-  }
+  } */
 
   .logo-btn {
     display: none;
@@ -309,7 +309,7 @@ body {
   .logo-btn-mobile {
     display: block;
     width: 100px;
-    margin-left: -134px;
+    margin-left: -100px;
   }
 
 }
@@ -317,17 +317,17 @@ body {
 /* Mobile  */
 
 @media (max-width: 680px) {
-
+/* 
   body {
     background-image: url('../img/big_women_mobile-v2.svg');
     background-size: 80vh;
     background-position-x: center;
-  }
-
+  } */
+/* 
   .container-menu {
     background-size: 205%;
     background-position-x: center;
-  }
+  } */
 
   .container-conteudo {
     height: 80vh;
