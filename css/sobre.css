@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto";
+  font-size: 14px;
+  background-image: none;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+.historia {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.7),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url(../img/mulheres.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+
+h2,
+.titulo h1 {
+  font-family: "Nunito";
+  padding: 45px 0 30px 20px;
+  color: #321e25;
+}
+
+.titulo h1 {
+  font-size: 40px;
+}
+
+.empresa {
+  color: #663845;
+  font-weight: bold;
+}
+
+.historia p {
+  text-align: left;
+  text-indent: 2em;
+  line-height: 1.5em;
+  font-size: 22px;
+  margin-top: 20px;
+  margin-bottom: 1em;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.img-fundadoras {
+  border: 1px solid #ffffff;
+  border-radius: 4%;
+  margin: 20px;
+  background: linear-gradient(to bottom, #8b4e5e, #321e25);
+  width: 530px;
+}
+
+h6 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.img-fundadoras img {
+  width: 500px;
+  justify-content: center;
+}
+
+.evento p,
+.fundadoras p {
+  font-size: 20px;
+  text-align: left;
+  text-indent: 2em;
+  margin-bottom: 1em;
+}
+
+.img-fundadoras p {
+  text-align: justify;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1.5em;
+  padding: 17px;
+}
+
+/*mobile */
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0;
+  }
+  .historia {
+    background-position: 35%;
+    padding: 10px;
+  }
+
+  .titulo {
+    margin: 0;
+    position: relative;
+  }
+
+  .sublinhado {
+    position: absolute;
+    width: 300px;
+    padding: 15px 0 10px 30px;
+  }
+
+  h2,
+  .titulo h1 {
+    text-align: left;
+    padding: 45px 0 30px 30px;
+  }
+
+  .evento p,
+  .historia p {
+    text-indent: 1.5em;
+    font-size: 22px;
+    margin-bottom: 1.5em;
+  }
+
+  .historia p {
+    padding: 0 10px;
+  }
+
+  .img-fundadoras:last-child {
+    margin-bottom: 30px;
+  }
+
+  .img-fundadoras {
+    margin: 0 0 10px 0;
+    width: auto;
+  }
+
+  .img-fundadoras img {
+    width: 455px;
+  }
+
+  .fundadoras p {
+    text-indent: 1.5em;
+    font-size: 22px;
+    padding: 40px 10px 10px;
+  }
+
+  .container-fundadoras p {
+    font-size: 18px;
+    line-height: 1.5em;
+    padding: 30px 10px 10px;
+    text-indent: 1em;
+    text-align: left;
+  }
+
+ .evento .sublinhado {
+  width: 180px;
+  padding: 20px 0 10px 30px;
+ }
+
+  .evento h2 {
+    font-size: 40px;
+    padding: 20px 0 40px 35px;
+    text-align: left;
+  }
+
+  .evento p {
+    padding: 30px 10px;
+  }
+
+  iframe {
+    border: 3px solid #ffffff;
+    width: 440px;
+    height: 245px;
+  }
+}
+
+/* Tablet*/
+
+@media (min-width: 780px) {
+  .container-fundadoras {
+    display: flex;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1050px) {
+  .historia {
+    padding: 3em;
+  }
+}
