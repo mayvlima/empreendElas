@@ -51,7 +51,7 @@ h2 {
   font-size: 35px;
 }
 
-.evento p,
+.container-evento p,
 .container-fundadoras p {
   font-size: 20px;
   text-align: left;
@@ -115,7 +115,7 @@ iframe{
     padding: 45px 0 30px 30px;
   }
 
-  .evento p,
+  .container-evento p,
   .container-historia p {
     text-indent: 1.5em;
     font-size: 22px;
@@ -140,7 +140,7 @@ iframe{
     padding: 40px 10px 10px;
   }
 
-  .evento,
+  .container-evento,
   .fundadoras {
     padding: 10px;
   }
@@ -177,8 +177,8 @@ iframe{
 
  .sublinhado-evento {
    position: absolute;
-  width: 180px;
-  padding: 20px 0 10px 30px;
+  width: 150px;
+  padding: 40px 0 10px 30px;
  }
 
   .evento h2 {
@@ -204,15 +204,6 @@ iframe{
 }
 
 
-
-@media (min-width: 480){
-
-  iframe {
-    width: 80%;
-    height: 400px;
-  }
-}
-
 /* Tablet*/
 
 @media (min-width: 768px) {
@@ -224,6 +215,7 @@ iframe{
     padding: 15px 20px;
   }
 
+  
   .titulo h1 {
     padding: 55px 0 30px 30px;
   }
@@ -234,6 +226,7 @@ iframe{
   }
 
   /*container-fundadoras */
+
   .fundadoras {
      display: flex; 
     flex-wrap: wrap;
